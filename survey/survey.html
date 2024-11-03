@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>My form</title>
+  </head> 
+  <body>
+    <main>
+    <h1 id="title">Food survey</h1>
+    <p id="description">Food is love, food is life.</p>
+    <form id="survey-form" mode="post" action="freecodecamp.org">
+      <fieldset>
+        <label for="name" id="name-label">
+          What's your name?
+          <input type="text" id="name" placeholder ="John Doe" required>
+        </label>
+        <label for="email" id="email-label">
+          What's your email?
+          <input type="email" id="email" placeholder="johndoe@mail.com" required>
+        </label>
+        <label for="number" id="number-label">
+          How old are you?
+          <input type="number" id="number" min="13" max="120" placeholder="At least 13">
+        <label>
+      </fieldset>
+      <fieldset>
+        What's your gender?
+        <select id="dropdown">
+          <option>Not specified</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select> 
+      </fieldset>
+      <fieldset>
+        Which one do you prefer?
+          <label for="pasta" class="inline"><input name="preferred" type="radio" id="pasta" value="pasta"> Pasta</label>
+          <label for="lasagna" class="inline"><input name="preferred" type="radio" id="lasagna" value="lasagna" checked> Lasagna</label>
+
+          Which ones do you like?
+          <label class="inline"><input type="checkbox" value="pasta"> Pasta</label>
+          <label class="inline"><input type="checkbox" value="pizza"> Pizza</label>
+          <label class="inline"><input type="checkbox" value="lasagna"> Lasagna</label>
+          <label class="inline"><input type="checkbox" value="spaghetti-vongole"> Spaghetti e vongole</label>
+      </fieldset> 
+      <fieldset>
+        Write your favourite cooking recipe:
+        <textarea rows="5" cols="30" placeholder="My cooking recipe..."></textarea> 
+      </fieldset>
+      <input type="submit" id="submit"> 
+    </form> 
+    </main>
+  </body> 
+</html>
